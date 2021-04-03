@@ -24,8 +24,8 @@
     <input type="hidden" name="tab_name" value="<?php echo $tab_name; ?>">
 
     <?php
-        submit_button( null, 'primary', 'submit', false );
-        submit_button( __('Save & Test'), 'secondary', 'submit_test', false );
+        submit_button( __('Save & Test', 'wordfence-notification'), 'primary', 'submit_test', false );
+        submit_button( null, 'secondary', 'submit', false );
     ?>
 
 </form>
