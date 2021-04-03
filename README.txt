@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: kadekjayak
-Donate link: https://www.kadekjayak.web.id
+Donate link: https://paypal.me/kadekjayak
 Tags: wordfence, notification
 Requires at least: 5.1
 Requires PHP: 7.0
