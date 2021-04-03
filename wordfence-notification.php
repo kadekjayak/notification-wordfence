@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Wordfence Notification
- * Plugin URI:        https://www.kadekjayak.web.id/plugins/wordfence-notification
+ * Plugin URI:        https://github.com/kadekjayak/wordfence-notification
  * Description:       Catch Wordfence email alert and send it to your notification channel (Slack or Telegram)
  * Version:           1.0.0
  * Author:            Kadek Jayak
