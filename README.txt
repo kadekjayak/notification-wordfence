@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: kadekjayak
 Donate link: https://www.kadekjayak.web.id
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Tags: wordfence, notification
+Requires at least: 5.1
+Tested up to: 5.7
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,9 +12,8 @@ Catch Wordfence email alert and send it to your notification channel (Slack or T
 
 == Description ==
 
-WordFence is a pretty good WordPress security plugin, they have brute-force protection that can block spam or login attempts;
-
-They send alert to your email, but sometimes it's become annoying when you start receive bunch email alert everyday.
+WordFence is a pretty good WordPress security plugin, they have brute-force protection that can block spam or login attempts.
+They send alert to your email, but sometimes it's become annoying when you start receive a bunch of email alert every hours.
 
 This plugin will catch Wordfence alert email (locked out and login) and send it to your notification channel (Slack or Telegram).
 
@@ -44,5 +43,5 @@ Other than that you may still receive email from Wordfence plugin (scan, problem
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * First public release :)
