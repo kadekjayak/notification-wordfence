@@ -3,6 +3,7 @@ Contributors: kadekjayak
 Donate link: https://www.kadekjayak.web.id
 Tags: wordfence, notification
 Requires at least: 5.1
+Requires PHP: 7.0
 Tested up to: 5.7
 Stable tag: 1.0.0
 License: GPLv2 or later
