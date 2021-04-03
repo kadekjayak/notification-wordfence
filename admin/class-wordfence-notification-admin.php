@@ -63,7 +63,7 @@ class Wordfence_Notification_Admin {
 		$plugin = 'wordfence-notification/wordfence-notification.php';
 		if  ($plugin == $plugin_file ) {
 
-			$url = menu_page_url('WordfenceNotification');
+			$url = menu_page_url('WordfenceNotification', false);
 		
 			$settings = array('settings' => '<a href="' . $url . '">' . __('Settings', 'General') . '</a>');
 			$actions = array_merge( $settings, $actions );

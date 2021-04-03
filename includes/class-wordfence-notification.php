@@ -160,9 +160,7 @@ class Wordfence_Notification {
 		$plugin_admin = new Wordfence_Notification_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'register_submenu', 90 );
-		$this->loader->add_action( 'admin_post_wf_notification_update_option', $plugin_admin, 'wf_notification_update_option', 90 );		
-		$plugin_basename =  plugin_basename(__FILE__);
-		
+		$this->loader->add_action( 'admin_post_wf_notification_update_option', $plugin_admin, 'wf_notification_update_option', 90 );
 		$this->loader->add_filter( 'plugin_action_links', $plugin_admin, 'plugin_action_links', 90, 2 );		
 
 	}
