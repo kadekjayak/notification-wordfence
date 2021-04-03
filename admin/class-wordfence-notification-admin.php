@@ -112,8 +112,6 @@ class Wordfence_Notification_Admin {
 		$tab_name = $_POST['tab_name'];
 		$options = array_merge( $options, $_POST['data'] );
 
-		update_option('wf-notification-' . $tab_name, $options, false );
-
 		if( $_POST['submit_test'] ) {
 			$error_message = '';
 			$transport_options = $options['transport'][ strtolower( $options['selected_transport'] ) ];
@@ -121,11 +119,15 @@ class Wordfence_Notification_Admin {
 
 			if( is_wp_error ( $result ) ) {
 				$error_message = $result->get_error_message();
+			} else {
+				update_option('wf-notification-' . $tab_name, $options, false );
 			}
 			$redirect_url = add_query_arg( 'is_test', 1, wp_get_referer() );
 			$redirect_url = add_query_arg( 'error_message', $error_message, $redirect_url );
 			return wp_redirect( $redirect_url );
 		}
+
+		update_option('wf-notification-' . $tab_name, $options, false );
 
 		return wp_redirect( wp_get_referer() );
 		exit;
