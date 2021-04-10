@@ -6,8 +6,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-class Wordfence_Notification_Loader {
+class Notification_Wordfence_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

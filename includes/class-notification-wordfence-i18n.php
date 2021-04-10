@@ -9,8 +9,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-class Wordfence_Notification_i18n {
+class Notification_Wordfence_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Wordfence_Notification_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wordfence-notification',
+			'notification-wordfence',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

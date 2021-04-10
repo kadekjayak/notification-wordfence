@@ -6,8 +6,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes/transports
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes/transports
  */
 
 /**
@@ -15,11 +15,11 @@
  * 
  * All notification transport should extend this base class
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes/transports
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes/transports
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-abstract class Wordfence_Notification_Transport_Base {
+abstract class Notification_Wordfence_Transport_Base {
     
     /**
      * @var Array
@@ -47,7 +47,7 @@ abstract class Wordfence_Notification_Transport_Base {
      * @param String $body
      * @return Array
      */
-    public function get_locked_out_message_data() {
+    public function get_message_data() {
 
         $body = $this->atts['message'];
 

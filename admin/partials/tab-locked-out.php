@@ -7,11 +7,11 @@
     <table class="form-table">
         <tbody>
             <tr>
-                <th><?php echo __('Enable?', 'wordfence-notification'); ?></th>
+                <th><?php echo __('Enable?', 'notification-wordfence'); ?></th>
                 <td>
                     <label for="wf-notification-input-enabled">
                         <input id="wf-notification-input-enabled" type="checkbox" <?php echo ( $values['enabled'] == 1 ? 'checked' : '' ); ?> name="data[enabled]" value="1" class="regular-text" />
-                        <?php echo __('Catch Locked Out Alert', 'wordfence-notification'); ?>
+                        <?php echo __('Catch Locked Out Alert', 'notification-wordfence'); ?>
                     </label>
                 </td>
             </tr>
@@ -24,7 +24,7 @@
     <input type="hidden" name="tab_name" value="<?php echo $tab_name; ?>">
 
     <?php
-        submit_button( __('Save & Test', 'wordfence-notification'), 'primary', 'submit_test', false );
+        submit_button( __('Save & Test', 'notification-wordfence'), 'primary', 'submit_test', false );
         submit_button( null, 'secondary', 'submit', false );
     ?>
 

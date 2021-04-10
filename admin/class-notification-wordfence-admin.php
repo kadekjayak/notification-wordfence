@@ -6,8 +6,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/admin
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/admin
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/admin
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-class Wordfence_Notification_Admin {
+class Notification_Wordfence_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -60,7 +60,7 @@ class Wordfence_Notification_Admin {
 	 */
 	public function plugin_action_links($actions, $plugin_file) { 
 		
-		$plugin = 'wordfence-notification/wordfence-notification.php';
+		$plugin = 'notification-wordfence/notification-wordfence.php';
 		if  ($plugin == $plugin_file ) {
 
 			$url = menu_page_url('WordfenceNotification', false);
@@ -82,7 +82,7 @@ class Wordfence_Notification_Admin {
 
 		$default_tab = null;
 		$tab = isset($_GET['tab']) ? $_GET['tab'] : $default_tab;
-		include 'partials/wordfence-notification-admin-display.php';
+		include 'partials/notification-wordfence-admin-display.php';
 
 	}
 
@@ -146,7 +146,7 @@ class Wordfence_Notification_Admin {
 			'message' => 'Test',
 		];
 
-		$transport = new Wordfence_Notification_Transport( $transport, $test_atts, $options );
+		$transport = new Notification_Wordfence_Transport( $transport, $test_atts, $options );
 		return $transport->send();
 
 	}

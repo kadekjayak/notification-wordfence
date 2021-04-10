@@ -6,22 +6,22 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  */
 
 /**
  * Handle Notification Transports
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
 
-require_once 'transports/class-wordfence-notification-transport-slack.php';
-require_once 'transports/class-wordfence-notification-transport-telegram.php';
+require_once 'transports/class-notification-wordfence-transport-slack.php';
+require_once 'transports/class-notification-wordfence-transport-telegram.php';
 
-class Wordfence_Notification_Transport {
+class Notification_Wordfence_Transport {
 
 	/**
 	 * @var Transport
@@ -46,7 +46,7 @@ class Wordfence_Notification_Transport {
 	 * @return Transport
 	 */
 	private function resolve_transport( $transport_name, $atts, $transport_options ) {
-		$class_name = 'Wordfence_Notification_Transport_' . ucfirst( $transport_name );
+		$class_name = 'Notification_Wordfence_Transport_' . ucfirst( $transport_name );
 		return new $class_name( $atts, $transport_options );
 	}
 

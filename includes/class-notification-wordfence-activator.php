@@ -6,8 +6,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-class Wordfence_Notification_Activator {
+class Notification_Wordfence_Activator {
 
 	/**
 	 * Short Description. (use period)

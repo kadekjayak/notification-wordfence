@@ -6,8 +6,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/public
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/public
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/public
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
-class Wordfence_Notification_Public {
+class Notification_Wordfence_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -84,7 +84,7 @@ class Wordfence_Notification_Public {
 		if ( @$option['enabled'] == 1 ) {
 			$selected_transport = strtolower( $option['selected_transport'] );
 			$transport_options = $option['transport'][ $selected_transport ];
-			$transport = new Wordfence_Notification_Transport( $selected_transport, $atts, $transport_options );
+			$transport = new Notification_Wordfence_Transport( $selected_transport, $atts, $transport_options );
 			return $transport->send();
 		}
 

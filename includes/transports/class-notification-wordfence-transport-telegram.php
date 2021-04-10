@@ -6,21 +6,21 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes/transports
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes/transports
  */
 
 /**
  * Telegram Notification Transport
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/includes/transports
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/includes/transports
  * @author     Kadek Jayak <kadekjayak@yahoo.co.id>
  */
 
-require_once 'class-wordfence-notification-transport-base.php';
+require_once 'class-notification-wordfence-transport-base.php';
 
-class Wordfence_Notification_Transport_Telegram extends Wordfence_Notification_Transport_Base {
+class Notification_Wordfence_Transport_Telegram extends Notification_Wordfence_Transport_Base {
 
     /**
      * Send Message
@@ -35,6 +35,8 @@ class Wordfence_Notification_Transport_Telegram extends Wordfence_Notification_T
             'parse_mode' => 'html',
             'text' => ''
         ];
+
+        $mail_data = $this->get_message_data();
         
         $subject = str_replace( '[Wordfence Alert]', '',  $this->atts['subject'] );
         $data['text'] = "

@@ -10,18 +10,18 @@
  *
  * @link              https://www.kadekjayak.web.id
  * @since             1.0.0
- * @package           Wordfence_Notification
+ * @package           Notification_Wordfence
  *
  * @wordpress-plugin
- * Plugin Name:       Wordfence Notification
- * Plugin URI:        https://github.com/kadekjayak/wordfence-notification
+ * Plugin Name:       Notification for WordFence
+ * Plugin URI:        https://github.com/kadekjayak/notification-wordfence
  * Description:       Catch Wordfence email alert and send it to your notification channel (Slack or Telegram)
  * Version:           1.0.0
  * Author:            Kadek Jayak
  * Author URI:        https://www.kadekjayak.web.id
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       wordfence-notification
+ * Text Domain:       notification-wordfence
  * Domain Path:       /languages
  */
 
@@ -35,34 +35,34 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WORDFENCE_NOTIFICATION_VERSION', '1.0.0' );
+define( 'NOTIFICATION_WORDFENCE_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-wordfence-notification-activator.php
+ * This action is documented in includes/class-notification-wordfence-activator.php
  */
-function activate_wordfence_notification() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wordfence-notification-activator.php';
-	Wordfence_Notification_Activator::activate();
+function activate_notification_wordfence() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-notification-wordfence-activator.php';
+	Notification_Wordfence_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-wordfence-notification-deactivator.php
+ * This action is documented in includes/class-notification-wordfence-deactivator.php
  */
-function deactivate_wordfence_notification() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wordfence-notification-deactivator.php';
-	Wordfence_Notification_Deactivator::deactivate();
+function deactivate_notification_wordfence() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-notification-wordfence-deactivator.php';
+	Notification_Wordfence_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_wordfence_notification' );
-register_deactivation_hook( __FILE__, 'deactivate_wordfence_notification' );
+register_activation_hook( __FILE__, 'activate_notification_wordfence' );
+register_deactivation_hook( __FILE__, 'deactivate_notification_wordfence' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wordfence-notification.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-notification-wordfence.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wordfence-notification.php
  *
  * @since    1.0.0
  */
-function run_wordfence_notification() {
+function run_notification_wordfence() {
 
-	$plugin = new Wordfence_Notification();
+	$plugin = new Notification_Wordfence();
 	$plugin->run();
 
 }
-run_wordfence_notification();
+run_notification_wordfence();

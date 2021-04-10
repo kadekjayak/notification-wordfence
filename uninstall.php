@@ -22,7 +22,7 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
+ * @package    Notification_Wordfence
  */
 
 // If uninstall not called from WordPress, then exit.

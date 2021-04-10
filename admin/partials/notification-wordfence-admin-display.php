@@ -8,8 +8,8 @@
  * @link       https://www.kadekjayak.web.id
  * @since      1.0.0
  *
- * @package    Wordfence_Notification
- * @subpackage Wordfence_Notification/admin/partials
+ * @package    Notification_Wordfence
+ * @subpackage Notification_Wordfence/admin/partials
  */
 ?>
 
@@ -21,13 +21,13 @@
     
     <nav class="nav-tab-wrapper">
         <a href="?page=WordfenceNotification" class="nav-tab <?php if($tab===null):?>nav-tab-active<?php endif; ?>">
-            <?php echo __('About', 'wordfence-notification'); ?>
+            <?php echo __('About', 'notification-wordfence'); ?>
         </a>
         <a href="?page=WordfenceNotification&tab=locked-out-alert" class="nav-tab <?php if($tab==='locked-out-alert'):?>nav-tab-active<?php endif; ?>">
-            <?php echo __('Locked Out Alert', 'wordfence-notification'); ?>
+            <?php echo __('Locked Out Alert', 'notification-wordfence'); ?>
         </a>
         <a href="?page=WordfenceNotification&tab=login-alert" class="nav-tab <?php if($tab==='login-alert'):?>nav-tab-active<?php endif; ?>">
-            <?php echo __('Login Alert', 'wordfence-notification'); ?>
+            <?php echo __('Login Alert', 'notification-wordfence'); ?>
         </a>
     </nav>
 
